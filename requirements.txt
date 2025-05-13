@@ -1,0 +1,36 @@
+# Core agent infrastructure
+fastapi
+uvicorn[standard]
+
+# Web scraping & API requests
+beautifulsoup4
+requests
+lxml                # Needed for some HTML parsing
+playwright          # Optional but better than bs4 for dynamic sites
+
+# LLM + RAG tools
+langchain
+openai
+faiss-cpu
+tiktoken
+sentence-transformers  # Embedding models (if not using OpenAI)
+
+# Document loading
+unstructured
+pypdf
+
+# Streamlit frontend
+streamlit
+streamlit_chat      # Optional, chatbot interface
+streamlit-audio-recorder  # For audio input if needed
+
+# Voice input/output
+openai-whisper       # Whisper STT
+TTS                  # Coqui TTS — better than gTTS
+pydub
+soundfile            # Required by TTS/Whisper
+numpy
+torch                # Needed for Whisper + Coqui TTS
+
+# Other utilities
+python-dotenv
